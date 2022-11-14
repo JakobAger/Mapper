@@ -1,4 +1,4 @@
-package com.example.mapper;
+package com.example.mappertest;
 
 import org.junit.Test;
 

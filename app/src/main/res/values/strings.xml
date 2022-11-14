@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Mapper</string>
+    <string name="app_name">MapperTest</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>
