@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+#Wed Nov 16 20:14:23 EST 2022
+=======
+#Mon Nov 14 11:17:24 EST 2022
+>>>>>>> 4b0e50a47c5318551915c5f7303ef156cfdba524
+distributionBase=GRADLE_USER_HOME
+distributionUrl=https\://services.gradle.org/distributions/gradle-7.4-bin.zip
+distributionPath=wrapper/dists
+zipStorePath=wrapper/dists
+zipStoreBase=GRADLE_USER_HOME

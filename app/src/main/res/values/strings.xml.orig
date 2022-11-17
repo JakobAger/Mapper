@@ -1,0 +1,8 @@
+<resources>
+<<<<<<< HEAD
+    <string name="app_name">Mapper</string>
+=======
+    <string name="app_name">MapperTest</string>
+    <string name="title_activity_maps">MapsActivity</string>
+>>>>>>> 4b0e50a47c5318551915c5f7303ef156cfdba524
+</resources>
