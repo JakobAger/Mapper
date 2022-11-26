@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "718698774327",
+    "project_id": "kerrhallmappertesting",
+    "storage_bucket": "kerrhallmappertesting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718698774327:android:2f3efdcef6a82cf09724b2",
+        "android_client_info": {
+          "package_name": "com.example.mappertest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718698774327-p02n0slam6nd6fmoisusgskof85r0f2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDrZCucKjGdaK_bG8NlF9Udvlu3aflkws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718698774327-p02n0slam6nd6fmoisusgskof85r0f2j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
