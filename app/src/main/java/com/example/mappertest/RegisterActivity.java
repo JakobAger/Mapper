@@ -71,7 +71,6 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             User user = new User(firstName, email);
-
                             FirebaseDatabase.getInstance().getReference("users")
                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                     .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -80,15 +79,12 @@ public class RegisterActivity extends AppCompatActivity {
                                             showMainActivity();
                                         }
                                     });
-
                         } else {
-                            Toast.makeText(RegisterActivity.this, "Authentication Failed", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this, "Authentication failed.",
+                                    Toast.LENGTH_LONG).show();
                         }
                     }
-
-
                 });
-
     }
 
     private void showMainActivity() {

@@ -6,6 +6,11 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
+import com.example.mappertest.databinding.ActivityMapsBinding;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMapOptions;
@@ -23,16 +28,46 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
 
+
+    ActivityMapsBinding binding;
+
     private GoogleMap mMap;
     TextView tvFirstName, tvEmail;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maps);
+        binding = ActivityMapsBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        replaceFragment(new MapsFragment());
+        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
+
+            switch (item.getItemId()){
+
+                case R.id.Map:
+                    replaceFragment(new MapsFragment());
+                    break;
+                case R.id.profile:
+                    replaceFragment(new ProfileFragment());
+                    break;
+                case R.id.setting:
+                    replaceFragment(new SettingsFragment());
+                    break;
+            }
+
+
+
+            return true;
+
+        });
+
+
 
         FirebaseAuth auth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = auth.getCurrentUser();
+
         if (currentUser == null){
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
@@ -63,6 +98,17 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
+
+    private void replaceFragment(Fragment fragment){
+
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction= fragmentManager.beginTransaction();
+
+        fragmentTransaction.replace(R.id.frame_layout,fragment);
+        fragmentTransaction.commit();
+    }
+
 
     /**
      * Manipulates the map once available.
