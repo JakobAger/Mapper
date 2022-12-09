@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">MapperTest</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="login">Login</string>
+    <string name="not_a_user_yet_register_here">Not A User Yet? Register Here.</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

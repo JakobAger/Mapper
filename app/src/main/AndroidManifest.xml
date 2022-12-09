@@ -12,7 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MapperTest"
         tools:targetApi="31">
-
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -26,10 +39,10 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="${MAPS_API_KEY}" />
+            android:value="APIKEY" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:label="@string/title_activity_maps">
             <intent-filter>

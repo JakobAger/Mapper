@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="344dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:text="@string/login"
+        app:layout_constraintBottom_toTopOf="@+id/space3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space4" />
+
+    <EditText
+        android:id="@+id/editTextTextPasswordLogin"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="39dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/space4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space2" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddressLogin"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_your_email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/space2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space" />
+
+    <TextView
+        android:id="@+id/switchToRegister"
+        android:layout_width="264dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="46dp"
+        android:text="@string/not_a_user_yet_register_here"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space3" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="412dp"
+        android:layout_height="215dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddressLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="408dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPasswordLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddressLogin" />
+
+    <Space
+        android:id="@+id/space4"
+        android:layout_width="412dp"
+        android:layout_height="129dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordLogin" />
+
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="411dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/switchToRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_baseline_fmd_good_24"
+        android:title="Map"
+        android:id="@+id/Map"
+        />
+
+    <item
+        android:icon="@drawable/ic_baseline_login_24"
+        android:title="Login"
+        android:id="@+id/login"
+        />
+    <item
+        android:icon="@drawable/ic_baseline_app_registration_24"
+        android:title="Register"
+        android:id="@+id/register"
+        />
+</menu>
